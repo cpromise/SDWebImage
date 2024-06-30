@@ -203,6 +203,8 @@
     if (thumbnailSizeValue != nil) {
     #if SD_MAC
         thumbnailSize = thumbnailSizeValue.sizeValue;
+    #elif SD_WATCH
+
     #else
         thumbnailSize = thumbnailSizeValue.CGSizeValue;
     #endif

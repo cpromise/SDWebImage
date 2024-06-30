@@ -137,6 +137,8 @@ static NSString * kSDCGImageDestinationRequestedFileSize = @"kCGImageDestination
     if (thumbnailSizeValue != nil) {
 #if SD_MAC
         thumbnailSize = thumbnailSizeValue.sizeValue;
+#elif SD_WATCH
+
 #else
         thumbnailSize = thumbnailSizeValue.CGSizeValue;
 #endif
@@ -239,6 +241,8 @@ static NSString * kSDCGImageDestinationRequestedFileSize = @"kCGImageDestination
         if (thumbnailSizeValue != nil) {
     #if SD_MAC
             thumbnailSize = thumbnailSizeValue.sizeValue;
+    #elif SD_WATCH
+
     #else
             thumbnailSize = thumbnailSizeValue.CGSizeValue;
     #endif
@@ -372,6 +376,8 @@ static NSString * kSDCGImageDestinationRequestedFileSize = @"kCGImageDestination
     if (maxPixelSizeValue != nil) {
 #if SD_MAC
         maxPixelSize = maxPixelSizeValue.sizeValue;
+#elif SD_WATCH
+
 #else
         maxPixelSize = maxPixelSizeValue.CGSizeValue;
 #endif

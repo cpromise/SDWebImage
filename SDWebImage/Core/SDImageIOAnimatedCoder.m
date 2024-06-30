@@ -570,6 +570,8 @@ static BOOL SDImageIOPNGPluginBuggyNeedWorkaround(void) {
     if (thumbnailSizeValue != nil) {
 #if SD_MAC
         thumbnailSize = thumbnailSizeValue.sizeValue;
+#elif SD_WATCH
+
 #else
         thumbnailSize = thumbnailSizeValue.CGSizeValue;
 #endif
@@ -707,6 +709,8 @@ static BOOL SDImageIOPNGPluginBuggyNeedWorkaround(void) {
         if (thumbnailSizeValue != nil) {
     #if SD_MAC
             thumbnailSize = thumbnailSizeValue.sizeValue;
+    #elif SD_WATCH
+
     #else
             thumbnailSize = thumbnailSizeValue.CGSizeValue;
     #endif
@@ -863,6 +867,8 @@ static BOOL SDImageIOPNGPluginBuggyNeedWorkaround(void) {
     if (maxPixelSizeValue != nil) {
 #if SD_MAC
         maxPixelSize = maxPixelSizeValue.sizeValue;
+#elif SD_WATCH
+
 #else
         maxPixelSize = maxPixelSizeValue.CGSizeValue;
 #endif
@@ -952,6 +958,8 @@ static BOOL SDImageIOPNGPluginBuggyNeedWorkaround(void) {
         if (thumbnailSizeValue != nil) {
     #if SD_MAC
             thumbnailSize = thumbnailSizeValue.sizeValue;
+    #elif SD_WATCH
+
     #else
             thumbnailSize = thumbnailSizeValue.CGSizeValue;
     #endif
